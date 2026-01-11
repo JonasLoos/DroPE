@@ -46,8 +46,8 @@ Our models follow HuggingFace's model loading API. For example, to load a DroPE 
 ```bash
 from transformers import AutoModel, AutoTokenizer
 
-tokenizer = AutoTokenizer.from_pretrained('SakanaAI/SmolLM-360M-DroPE', trust_remote_code=True)
-model = AutoModel.from_pretrained('SakanaAI/SmolLM-360M-DroPE', trust_remote_code=True, torch_dtype=torch.bfloat16)
+tokenizer = AutoTokenizer.from_pretrained('SakanaAI/Llama-2-7b-hf-DroPE', trust_remote_code=True)
+model = AutoModel.from_pretrained('SakanaAI/Llama-2-7b-hf-DroPE', trust_remote_code=True, torch_dtype=torch.bfloat16)
 ```
 
 Inference is then straightforward:
