@@ -1,3 +1,17 @@
+command for running single-gpu drope recalibration for smollm 360m:
+
+```sh
+CUDA_VISIBLE_DEVICES=0 HYDRA_FULL_ERROR=1 python train.py run_cfg@_global_=smollm_360m_drope +to=bfloat16 '++trainer.model=${loaded_model}' ++model_args.attn_implementation=sdpa
+```
+
+---
+
+<div align="center">
+<i>original readme below</i>
+</div>
+
+---
+
 <h1 align="center">
   <a href="https://github.com/SakanaAI/DroPE">
 </a><br>
