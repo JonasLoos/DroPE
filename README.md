@@ -4,6 +4,9 @@ command for running single-gpu drope recalibration for smollm 360m:
 CUDA_VISIBLE_DEVICES=0 HYDRA_FULL_ERROR=1 python train.py run_cfg@_global_=smollm_360m_drope +to=bfloat16 '++trainer.model=${loaded_model}' ++model_args.attn_implementation=sdpa
 ```
 
+<img width="576" height="346" alt="image" src="https://github.com/user-attachments/assets/a7ca46ae-3d91-4406-8496-f2623bb7b887" />
+
+
 ---
 
 <div align="center">
